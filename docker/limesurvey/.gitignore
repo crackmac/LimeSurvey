@@ -16,9 +16,6 @@
 !.travis.yml
 !.babelrc
 
-# ignore redundant files
-docker/limesurvey/*
-docker/limesurvey.tar.gz
 
 # upload directory : whole except the index.html and readme.txt
 /upload/*.*
