@@ -16,6 +16,8 @@
 !.travis.yml
 !.babelrc
 
+# 
+docker/limesurvey/*
 
 # upload directory : whole except the index.html and readme.txt
 /upload/*.*

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: docker-cse.wds.io:5000/limesurvey
+    ports:
+      - "8080:80"
+    volumes:
+      - ${PWD}/src/:/var/www/html/
+  mysql:
+    image: mysql/mysql-server:5.7
