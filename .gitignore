@@ -1,3 +1,6 @@
+# skip sensitive files
+**/moviesanywhere-io-tls.yaml
+**/registrykey-secret.yml
 
 # Never include config.php
 /application/config/config.php
@@ -113,7 +116,6 @@ third_party/facebook/**/*
 third_party/symfony/**/*
 third_party/composer/installed\.json
 
-
 ## ignore Vagrantfile
 Vagrantfile
 
@@ -130,6 +132,16 @@ themes/survey/no_bootstrap/files/*
 !themes/survey/*/files/pattern.png
 !themes/survey/*/files/print_img_radio.png
 
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+**/*.tfstate
+
+# Crash log files
+crash.log
 
 
 
